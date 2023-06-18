@@ -33,12 +33,7 @@ const eHelp = new MessageEmbed()
       await db.set(`femmesalon_${interaction.guild.id}`, user.id).then(interaction.reply({ embeds:[eHelp]}))
   
         
-  } else {
-  const wl = new MessageEmbed()
-    .setTitle(":x: Tu ne peux pas !")
-    .setColor("2f3136")
   
-  interaction.reply({embeds: [wl]})
   }
     }
 
