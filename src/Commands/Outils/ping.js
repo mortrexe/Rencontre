@@ -21,7 +21,7 @@ class command {
 
     async execute(bot, config, interaction) {
       const user = interaction.options.getChannel(`salon`)
-if(config.id == interaction.user.id ) {
+//if(config.id == interaction.user.id ) {
   
 
         
@@ -41,7 +41,7 @@ const eHelp = new MessageEmbed()
   interaction.reply({embeds: [wl]})
   }
     }
-}
+
 
 
 
