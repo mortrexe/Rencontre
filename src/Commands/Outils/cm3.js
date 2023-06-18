@@ -14,7 +14,7 @@ class command {
 
     async execute(bot, interaction) {
       //const user = interaction.options.getUser(`user`)
-if(process.env.id == interaction.user.id ) {
+//if(process.env.id == interaction.user.id ) {
   const row = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
@@ -45,13 +45,7 @@ const eHelp = new MessageEmbed()
       interaction.channel.send({ embeds:[eHelp], components: [row] })
   
         
-  } else {
-  const wl = new MessageEmbed()
-    .setTitle(":x: Tu ne peux pas </wl:0> !")
-    .setColor("2f3136")
-  
-  interaction.reply({embeds: [wl]})
-  }
+
     }
 }
 
