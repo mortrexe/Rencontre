@@ -19,9 +19,9 @@ class command {
  
     
 
-    async execute(bot, interaction) {
+    async execute(bot, config, interaction) {
       const user = interaction.options.getChannel(`salon`)
-if(process.env.id == interaction.user.id ) {
+if(config.id == interaction.user.id ) {
   
 
         
